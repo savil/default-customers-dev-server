@@ -4,7 +4,7 @@ import (
     "net/http"
 )
 func hello(w http.ResponseWriter, req *http.Request) {
-    fmt.Fprintf(w, "default world 2\n")
+    fmt.Fprintf(w, "default world 3\n")
 }
 
 func defaultHandler(w http.ResponseWriter, req *http.Request) {
