@@ -5,10 +5,12 @@ import (
 )
 func hello(w http.ResponseWriter, req *http.Request) {
     fmt.Fprintf(w, "default world 6\n")
+    w.WriteHeader(http.StatusOK) 
 }
 
 func defaultHandler(w http.ResponseWriter, req *http.Request) {
   fmt.Fprintf(w, "reached the default service handler\n")
+  w.WriteHeader(http.StatusOK) 
 }
 
 func main() {
