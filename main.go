@@ -1,7 +1,6 @@
 package main
 import (
     "fmt"
-    "os"
     "net/http"
 )
 func hello(w http.ResponseWriter, req *http.Request) {
